@@ -11,7 +11,7 @@ Each grey dashed box (`.media-slot`) is a placeholder. The HTML comment above ea
 ## When the paper is public
 
 - Replace "Anonymous Authors" with author blocks (template in an HTML comment).
-- Add `href`s to the Paper / arXiv / Video buttons and remove `disabled` and the `(soon)` tag.
+- Add `href`s to the Paper / arXiv / Video / Code buttons (the Code URL is in an HTML comment) and remove `disabled` and the `(soon)` tag.
 - Uncomment the Video section and set the YouTube ID.
 - Replace the BibTeX entry.
 
