@@ -1,0 +1,172 @@
+body {
+  font-family: 'Noto Sans', sans-serif;
+  background: #fff;
+}
+
+.publication-title,
+.publication-subtitle,
+.publication-authors,
+.teaser {
+  font-family: 'Google Sans', 'Noto Sans', sans-serif;
+}
+
+.publication-subtitle {
+  margin-top: 0.75rem !important;
+  line-height: 1.35;
+  color: #363636;
+}
+
+.publication-authors {
+  color: #4a4a4a;
+}
+
+.publication-status {
+  margin-top: 0.25rem;
+  color: #7a7a7a;
+}
+
+.author-block {
+  display: inline-block;
+}
+
+.publication-links {
+  margin-top: 1.25rem;
+}
+
+.link-block a {
+  margin: 5px 2px;
+}
+
+/* "Coming soon" buttons: visible, but clearly not clickable. */
+.link-block .button[disabled] {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.link-block .soon {
+  font-size: 0.75em;
+  margin-left: 0.35em;
+  opacity: 0.85;
+}
+
+.setpiece {
+  font-variant: small-caps;
+  font-weight: 600;
+}
+
+/* Teaser */
+.teaser .hero-body {
+  padding-top: 0;
+  padding-bottom: 3rem;
+}
+
+.teaser video,
+.teaser img {
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+}
+
+.teaser .subtitle {
+  margin-top: 1.25rem;
+}
+
+/* Placeholder slot for media that has not been recorded yet.
+   Replace each .media-slot with a <video> or <img> when ready. */
+.media-slot {
+  aspect-ratio: 16 / 9;
+  width: 100%;
+  border: 2px dashed #c9cfd6;
+  border-radius: 10px;
+  background: #f6f8fa;
+  color: #7a8592;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  text-align: center;
+  padding: 1rem;
+}
+
+.media-slot .icon {
+  font-size: 1.6rem;
+  height: auto;
+  width: auto;
+}
+
+.media-slot.is-compact {
+  aspect-ratio: 16 / 10;
+}
+
+/* Method overview */
+.method-step {
+  height: 100%;
+}
+
+.method-step .step-index {
+  display: inline-block;
+  font-family: 'Google Sans', 'Noto Sans', sans-serif;
+  font-weight: 700;
+  color: #2f6f9f;
+  margin-right: 0.35rem;
+}
+
+.method-step h3 {
+  margin-top: 0.9rem !important;
+  margin-bottom: 0.5rem !important;
+}
+
+.method-step p {
+  color: #4a4a4a;
+}
+
+/* Video */
+.publication-video {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+  overflow: hidden;
+  border-radius: 10px !important;
+}
+
+.publication-video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* BibTeX */
+.bibtex-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.bibtex-header .title {
+  margin-bottom: 0 !important;
+}
+
+#BibTeX pre {
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.footer .icon-link {
+  font-size: 25px;
+  color: #000;
+}
+
+@media screen and (max-width: 768px) {
+  .publication-title {
+    font-size: 2.25rem !important;
+  }
+  .publication-subtitle {
+    font-size: 1.2rem !important;
+  }
+}

@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="SetPiece: a desktop and VR authoring system that shows LLM agents' work as an editable layout plan and editable behavior nodes, so users can steer coding agents without reading code.">
+  <meta name="keywords" content="SetPiece, LLM agents, virtual reality, VR authoring, immersive scenes, visual scripting, human-AI co-authoring">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Co-Authoring with Agents: Live, Transparent Authoring of Immersive Scenes in VR and on the Desktop</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.svg">
+
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Co-Authoring with Agents</h1>
+          <h2 class="subtitle is-3 publication-subtitle">
+            Live, Transparent Authoring of Immersive Scenes in VR and on the Desktop
+          </h2>
+
+          <!-- Authors: anonymous for review. Replace with author-blocks when de-anonymized, e.g.
+          <span class="author-block"><a href="https://...">First Author</a><sup>1</sup>,</span>
+          -->
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">Anonymous Authors</span>
+          </div>
+          <div class="is-size-6 publication-status">
+            <span class="author-block">Paper under review</span>
+          </div>
+
+          <div class="publication-links">
+            <!-- Paper PDF. Add href and remove `disabled` + the "soon" tag when available. -->
+            <span class="link-block">
+              <a class="button is-normal is-rounded is-dark" disabled aria-disabled="true">
+                <span class="icon"><i class="fas fa-file-pdf"></i></span>
+                <span>Paper</span><span class="soon">(soon)</span>
+              </a>
+            </span>
+            <!-- arXiv. -->
+            <span class="link-block">
+              <a class="button is-normal is-rounded is-dark" disabled aria-disabled="true">
+                <span class="icon"><i class="ai ai-arxiv"></i></span>
+                <span>arXiv</span><span class="soon">(soon)</span>
+              </a>
+            </span>
+            <!-- Video. -->
+            <span class="link-block">
+              <a class="button is-normal is-rounded is-dark" disabled aria-disabled="true">
+                <span class="icon"><i class="fab fa-youtube"></i></span>
+                <span>Video</span><span class="soon">(soon)</span>
+              </a>
+            </span>
+            <!-- Code. -->
+            <span class="link-block">
+              <a href="https://github.com/phongdepptrai/Immersive-coding-with-LLM"
+                 class="external-link button is-normal is-rounded is-dark"
+                 target="_blank" rel="noopener">
+                <span class="icon"><i class="fab fa-github"></i></span>
+                <span>Code</span>
+              </a>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <!-- Teaser. Replace the .media-slot below with:
+      <video id="teaser" autoplay muted loop playsinline poster="./static/images/teaser.jpg">
+        <source src="./static/videos/teaser.mp4" type="video/mp4">
+      </video>
+      -->
+      <div class="media-slot" role="img" aria-label="Teaser video placeholder">
+        <span class="icon"><i class="fas fa-vr-cardboard"></i></span>
+        <strong>Teaser video coming soon</strong>
+        <span>Desktop and VR authoring session</span>
+      </div>
+      <h2 class="subtitle has-text-centered">
+        <span class="setpiece">SetPiece</span> shows the agents' work as a layout plan and
+        behavior nodes that you can edit by hand, in VR and on the desktop.
+      </h2>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Agents built on large language models (LLMs) can build interactive 3D scenes from a
+            request, so the user's work shifts from writing code to checking and correcting it.
+            However, a user who does not read the code can often only correct the agents by asking
+            again and waiting for the agents once more.
+          </p>
+          <p>
+            We demonstrate <span class="setpiece">SetPiece</span>, a desktop and virtual reality (VR)
+            authoring system that shows the agents' work in two editable forms. Before objects are
+            generated, the agents propose a layout plan of labeled 3D boxes that the user can move,
+            rotate, scale, and select. Once a behavior is generated, it appears as a node (in VR, as a
+            panel) whose objects and parameters the user can edit by hand. Generated code is loaded
+            at runtime, so edits take effect without restarting the application, and failing code is
+            rolled back.
+          </p>
+          <p>
+            <span class="setpiece">SetPiece</span> also includes built-in tasks with automatic checks
+            to compare agent pipeline configurations. Planned user studies will examine when users fix
+            errors by hand and when they still need agents or code, thereby assessing whether editable
+            intermediate representations allow people without game-engine experience to steer coding
+            agents.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- How it works. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">How <span class="setpiece">SetPiece</span> Works</h2>
+      </div>
+    </div>
+
+    <div class="columns is-multiline">
+      <div class="column is-half">
+        <div class="method-step">
+          <!-- Replace with <img src="./static/images/layout-plan.jpg" alt="..."> -->
+          <div class="media-slot is-compact" role="img" aria-label="Layout plan figure placeholder">
+            <span class="icon"><i class="fas fa-cubes"></i></span>
+            <span>Layout plan figure</span>
+          </div>
+          <h3 class="title is-5"><span class="step-index">1</span>Edit the layout plan</h3>
+          <p>
+            Before any object is generated, the agents propose a plan of labeled 3D boxes. Move,
+            rotate, scale, or select boxes to fix the layout before generation starts.
+          </p>
+        </div>
+      </div>
+
+      <div class="column is-half">
+        <div class="method-step">
+          <!-- Replace with <img src="./static/images/behavior-nodes.jpg" alt="..."> -->
+          <div class="media-slot is-compact" role="img" aria-label="Behavior node figure placeholder">
+            <span class="icon"><i class="fas fa-project-diagram"></i></span>
+            <span>Behavior node / VR panel figure</span>
+          </div>
+          <h3 class="title is-5"><span class="step-index">2</span>Edit behaviors as nodes</h3>
+          <p>
+            Each generated behavior appears as a node on the desktop and as a panel in VR. Change
+            its objects and parameters by hand instead of prompting again.
+          </p>
+        </div>
+      </div>
+
+      <div class="column is-half">
+        <div class="method-step">
+          <!-- Replace with <img src="./static/images/runtime-loading.jpg" alt="..."> -->
+          <div class="media-slot is-compact" role="img" aria-label="Runtime loading figure placeholder">
+            <span class="icon"><i class="fas fa-sync-alt"></i></span>
+            <span>Runtime loading figure</span>
+          </div>
+          <h3 class="title is-5"><span class="step-index">3</span>See changes live</h3>
+          <p>
+            Generated code is loaded at runtime, so edits take effect without restarting the
+            application. If new code fails, it is rolled back.
+          </p>
+        </div>
+      </div>
+
+      <div class="column is-half">
+        <div class="method-step">
+          <!-- Replace with <img src="./static/images/task-checks.jpg" alt="..."> -->
+          <div class="media-slot is-compact" role="img" aria-label="Built-in tasks figure placeholder">
+            <span class="icon"><i class="fas fa-tasks"></i></span>
+            <span>Built-in tasks figure</span>
+          </div>
+          <h3 class="title is-5"><span class="step-index">4</span>Compare agent pipelines</h3>
+          <p>
+            Built-in tasks with automatic checks let you compare different agent pipeline
+            configurations.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ How it works. -->
+  </div>
+</section>
+
+<!-- Paper video. Uncomment when the video is public.
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Video</h2>
+        <div class="publication-video">
+          <iframe src="https://www.youtube.com/embed/VIDEO_ID?rel=0"
+                  title="SetPiece video" frameborder="0"
+                  allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+-->
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <div class="bibtex-header">
+      <h2 class="title">BibTeX</h2>
+      <button class="button is-small is-rounded" id="copy-bibtex" type="button">
+        <span class="icon"><i class="far fa-copy"></i></span>
+        <span class="copy-label">Copy</span>
+      </button>
+    </div>
+    <p>The full citation will be added when the paper is published.</p>
+    <pre><code id="bibtex-code">@misc{setpiece2026,
+  title  = {Co-Authoring with Agents: Live, Transparent Authoring of Immersive Scenes in VR and on the Desktop},
+  author = {Anonymous},
+  year   = {2026},
+  note   = {Under review}
+}</code></pre>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link" href="https://github.com/phongdepptrai/Immersive-coding-with-LLM"
+         aria-label="Code on GitHub" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content has-text-centered">
+          <p>
+            This website is licensed under a <a rel="license"
+              href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons
+            Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+          <p>
+            It is built on the <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>
+            project page template.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
