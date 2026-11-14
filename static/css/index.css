@@ -99,6 +99,25 @@ body {
   aspect-ratio: 16 / 10;
 }
 
+/* Pipeline figure */
+.pipeline {
+  margin-top: 2.5rem;
+}
+
+.pipeline img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid #e6e9ed;
+  border-radius: 10px;
+}
+
+.pipeline figcaption {
+  margin-top: 1rem;
+  color: #4a4a4a;
+  font-size: 0.95rem;
+}
+
 /* Method overview */
 .method-step {
   height: 100%;
@@ -163,6 +182,9 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+  .pipeline figcaption {
+    text-align: left !important;
+  }
   .publication-title {
     font-size: 2.25rem !important;
   }

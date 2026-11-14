@@ -134,6 +134,30 @@
       </div>
     </div>
     <!--/ Abstract. -->
+
+    <!-- Pipeline. -->
+    <div class="columns is-centered has-text-centered pipeline">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Pipeline</h2>
+        <figure>
+          <a href="./static/images/pipeline.webp" target="_blank" rel="noopener"
+             title="Open full-size diagram">
+            <img src="./static/images/pipeline.webp" width="2400" height="1416"
+                 alt="SetPiece system architecture in three columns. User in VR: a prompt by voice or text with object references, and an interactive scene showing the visual program state. Agent workflow: conversation and scene-plus-graph context feed a planner, which drives scene generation and a code writer. Runtime: generated code is compiled and loaded, and the visual program applies node and edge edits. A bottom bar, Shared scene plus visual program, lets the user inspect, edit, override, or continue.">
+          </a>
+          <figcaption class="content has-text-justified">
+            System architecture organized around the user, agent workflow, and runtime.
+            Conversation and scene/graph context inform the planner, which coordinates scene
+            generation and code writing. Runtime updates are exposed through the visual program and
+            interactive scene. Solid arrows denote actions or updates; the dashed arrow returns scene
+            and graph state to the context stage. The bottom loop emphasizes user inspection and
+            direct editing. The scene thumbnail shows the implemented scene and visual programming
+            graph.
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+    <!--/ Pipeline. -->
   </div>
 </section>
 
