@@ -169,14 +169,11 @@
 
       <div class="column is-half">
         <div class="method-step">
-          <!-- Replace with a square clip, e.g.:
-          <video class="feature-media" autoplay muted loop playsinline width="1080" height="1080">
-            <source src="./static/videos/runtime-loading.mp4" type="video/mp4">
-          </video> -->
-          <div class="media-slot is-square" role="img" aria-label="Runtime loading figure placeholder">
-            <span class="icon"><i class="fas fa-sync-alt"></i></span>
-            <span>Runtime loading figure</span>
-          </div>
+          <video class="feature-media" autoplay muted loop playsinline preload="auto"
+                 width="1080" height="1080"
+                 aria-label="A basketball shooter: the pitch angle, force, and ball size inputs are changed in the graph, and the next shot uses the new values without restarting.">
+            <source src="./static/videos/changes-live.mp4" type="video/mp4">
+          </video>
           <h3 class="title is-5">See changes live</h3>
           <p>
             Generated code is loaded at runtime, so edits take effect without restarting the
