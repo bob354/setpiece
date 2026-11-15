@@ -63,6 +63,8 @@ body {
 .teaser video,
 .teaser img {
   width: 100%;
+  height: auto;
+  background: #1e1f22;
   border-radius: 10px;
   display: block;
 }
