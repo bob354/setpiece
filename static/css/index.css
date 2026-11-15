@@ -101,6 +101,21 @@ body {
   aspect-ratio: 16 / 10;
 }
 
+.media-slot.is-square {
+  aspect-ratio: 1 / 1;
+}
+
+/* Looping, silent clip used like a GIF in a feature card. */
+.feature-media {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 10px;
+  background: #2b2d31;
+}
+
 /* Pipeline figure */
 .pipeline {
   margin-top: 2.5rem;
