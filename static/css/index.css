@@ -116,6 +116,10 @@ body {
   background: #2b2d31;
 }
 
+.feature-media.is-wide {
+  aspect-ratio: 16 / 9;
+}
+
 /* Paper video (between Abstract and Pipeline) */
 .paper-video {
   margin-top: 2.5rem;
